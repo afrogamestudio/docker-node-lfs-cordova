@@ -7,6 +7,7 @@ RUN apt-get update &&\
     curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash &&\
 	apt-get install -y debian-archive-keyring git-lfs=1.5.5 libxml2-utils &&\ 
 	apt-get install -y lftp &&\
+    apt-get install -y xsltproc &&\
 	npm install electron-packager -g &&\
 	apt-get update &&\
     apt-get -qq install git-ftp &&\
